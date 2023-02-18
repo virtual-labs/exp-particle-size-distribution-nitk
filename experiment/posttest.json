@@ -2,35 +2,86 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The volume of suspension taken in the hydrometer test is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "500ml",
+        "b": "1000ml",
+        "c": "650ml",
+        "d": "800ml"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "To conduct the hydrometer analysis, 500ml of water sample is taken mixed along with the soil in suspension in a 1000ml graduated cylinder.",
+        "b": "To conduct the hydrometer analysis, 500ml of water sample is taken mixed along with the soil in suspension in a 1000ml graduated cylinder.",
+        "c": "To conduct the hydrometer analysis, 500ml of water sample is taken mixed along with the soil in suspension in a 1000ml graduated cylinder.",
+        "d": "To conduct the hydrometer analysis, 500ml of water sample is taken mixed along with the soil in suspension in a 1000ml graduated cylinder."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The effective depth (He) corresponding to each of the major calibration marks is given by the following expression",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "He = H + 1/2(h - Vh/A)",
+        "b": "He = He + 1/2(h - Vh/A)",
+        "c": " H + 1/52(h - Vh/A)",
+        "d": "He = H + 10/2(h - Vh/A)"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "He = H + 1/2(h - Vh/A) is the formula used to calculate the effective depth corresponding to each major calibration mark.  <a href='www.google.com'>here</a>",
+        "b": "He = H + 1/2(h - Vh/A) is the formula used to calculate the effective depth corresponding to each major calibration mark and He = He + 1/2(h - Vh/A) The formula is incorrect.",
+        "c": "He = H + 1/2(h - Vh/A) is the formula used to calculate the effective depth corresponding to each major calibration mark, He = H + 1/52(h - Vh/A) , 1/52 is the incorrect parameter in this formula.",
+        "d": "He = H + 1/2(h - Vh/A) is the formula used to calculate the effective depth corresponding to each major calibration mark, He = H + 10/2(h - Vh/A), 10/2 is the incorrect parameter in this formula."
+      },
+      "correctAnswer": "a",
+      "difficulty": "Advanced"
+    },
+    {
+      "question": " The meniscus correction in hydrometer reading is ",
+      "answers": {
+        "a": "Always negative",
+        "b": "Always positive",
+        "c": " Negative sometimes",
+        "d": "Positive sometimes"
+      },
+      "explanations": {
+        "a": "Since the hydrometer readings increase downward on the stem, the observed hydrometer readings are always less than the true one. Hence the meniscus correction is always positive. Thus always negative is the incorrect option. <a href='www.google.com'>here</a>",
+        "b": "Since the hydrometer readings increase downward on the stem, the observed hydrometer readings are always less than the true one. Hence the meniscus correction is always positive.",
+        "c": "Since the hydrometer readings increase downward on the stem, the observed hydrometer readings are always less than the true one. Hence the meniscus correction is always positive. Thus negative sometimes is the incorrect option.",
+        "d": "Since the hydrometer readings increase downward on the stem, the observed hydrometer readings are always less than the true one. Hence the meniscus correction is always positive. Thus positive sometimes is the incorrect option."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": " The calibration curve is plot between ",
+      "answers": {
+        "a": "He vs Rh",
+        "b": "H vs He",
+        "c": " h vs Rh",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "The calibration curve is plotted between He vs Rh to get the corrected values of hydrometer readings.<a href='www.google.com'>here</a>",
+        "b": "The calibration curve is plotted between He vs Rh and not between H vs He to get the corrected values of hydrometer readings.",
+        "c": "The calibration curve is plotted between He vs Rh and not between h vs Rh to get the corrected values of hydrometer readings.",
+        "d": "The calibration curve is plotted between He vs Rh to get the corrected values of hydrometer readings."
+      },
+      "correctAnswer": "a",
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "Determine the effective height (He) of the hydrometer if H = 5cm, h = 15cm, Vh = 80cm3, A = 30cm2. ",
+      "answers": {
+        "a": "1.11 cm",
+        "b": "18.3 cm",
+        "c": "11.16 cm",
+        "d": "15.2 cm"
+      },
+      "explanations": {
+        "a": "The formula to be used to calculate He is = H + 1/2(h - Vh/A), when the given values are substituted in the formula, He = 11.16cm, thus 1.11cm is the incorrect option. <a href='www.google.com'>here</a>",
+        "b": "The formula to be used to calculate He is = H + 1/2(h - Vh/A), when the given values are substituted in the formula, He = 11.16cm, thus 18.3cm is the incorrect option.",
+        "c": "The formula to be used to calculate He is = H + 1/2(h - Vh/A), when the given values are substituted in the formula, He = 11.16cm.",
+        "d": "The formula to be used to calculate He is = H + 1/2(h - Vh/A), when the given values are substituted in the formula, He = 11.16cm, thus 15.2cm is the incorrect option."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"

@@ -1,13 +1,1783 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/mathstyle.css"/>
+    <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+   
+    <style></style>
+  </head>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
+  <body style="margin: 0; font-family: verdana">
+    <div id="simscreen">
+      <div id="title">
+        <h4>DETERMINATION OF PARTICLE SIZE DISTRIBUTION USING HYDROMETER</h4>
+      </div>
+      <div class="simsubscreen" id="canvas0">
+        <h4 class="incanvas">Objective:</h4>
+        <p class="incanvas" style="font-size: 14px">
+            To determine the particle size distribution, finer than 75-micron sieve, by sedimentation analysis using a density hydrometer and then plot the grain size distribution curve.
+        </p>
+        <br />
+        <h4 class="incanvas">Apparatus used:</h4>
+        <p class="incanvas" style="font-size: 14px">
+            Density hydrometer, Glass measuring cylinders of 1000ml capacity, Sieve, Weighing balance, Distilled water, Dispersing agent, Electric blender etc.
+        </p>
+        <br />
+        
+        
+        <br />&nbsp;<span
+          class="tooltip"
+          style="
+            border-bottom: 1px dotted;
+            color: red;
+            text-align: justify;
+            top: -26px;
+           
+            left:-19px;
+          "
+          ><b>Description</b>
+          <span class="tooltiptext">
+            <p><strong style="color: red"></strong>Based on Stoke’s law, the hydrometer method of sedimentation analysis is used to determine the particle size distribution of soils finer than 75-micron.</p>
+            
+          </span>
+        </span>
+        <img
+        style="
+          position: absolute;
+          left: 0px;
+          top: 179px;
+          max-width: 17%;
+          width: 100%;
+          transform: rotateY(180deg);
+        "
+        src="./images/man1.png"
+        title="Man"
+      />
+      
+      <img
+        style="position: absolute; left: 120px; top: 232px; width: 620px"
+        src="./images/table.png"
+      />
+      <img
+        style="
+          position: absolute;
+          left: 190px;
+          top: 277px;
+          max-width: 19px;
+          width: 100%;
+          transform: rotateX(298deg);
+        "
+        src="./images/1..png"
+        title="hydrometer"
+      />
+      <img
+        style="
+          position: absolute;
+          left: 265px;
+          top: 319px;
+          max-width: 14px;
+          width: 100%;
+          
+        "
+        src="./images/drops.png"
+        title="Dispersing agent"
+      />
+      <img
+      id="1-1"
+        style="
+          position: absolute;
+          left: 218px;
+          top: 221px;
+          max-width: 5%;
+          width: 100%;
+         
+        "
+        src="./images/tube.png"
+        title="1000ml cylinder"
+      />
+      <img
+      id="1-5"
+        style="
+          position: absolute;
+          left: 293px;
+          top: 290px;
+          max-width: 15%;
+          width: 100%;
+          
+        "
+        src="./images/pan.png"
+        title="Sieve"
+      />
+     
+      <img
+      id="1-3"
+        style="
+          position: absolute;
+          left: 428px;
+          top: 252px;
+          max-width: 22%;
+          width: 100%;
+          
+        "
+        src="./images/wm1.png"
+        title="weighing machine"
+      />
+      <img
+      id="1-4"
+        style="
+          position: absolute;
+          left: 579px;
+          top: 80px;
+          max-width: 29%;
+          width: 100%;
+          
+        "
+        src="./images/mechanicalMixer1.png"
+        title="mechanical Mixer"
+      />
+      </div>
+      <div class="simsubscreen" id="canvas1" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;1&nbsp;</span>
+        <p class="steptext">
+          &nbsp;Take 500ml of water in a 1000ml glass measuring cylinder, and note down the water level reading.
+        </p>
+        <div id="grad3" style="position: absolute; left: 226px; top:346px; text-align:left;  width:180px;color:#888888; visibility: hidden; rotate: 90deg;"></div>
+        <div id="grad2" style="position: absolute; top:418px; text-align:left; left: 276px; width:182px;color:#888888; visibility: hidden; rotate: 90deg;"></div>
+        <div id="grad4" style="position: absolute; top:144px; text-align:left; left: 310px; width:8px; border-radius: 10px;color:#888888; visibility: hidden; "></div>
+        <img
+      id="1-1-1"
+        style="
+          position: absolute;
+          left: 279px;
+          top: 154px;
+          max-width: 11%;
+          width: 100%;
+         
+        "
+        src="./images/1.3a.png"
+       
+      />
+      
+      <img
+      id="1-1-3"
+        style="
+          position: absolute;
+          left: 538px;
+          top: 148px;
+          max-width: 13%;
+          width: 100%;
+          rotate: 83deg;
+          visibility: hidden;
+        "
+        src="./images/hyWithColor.png"
+       
+      />
+      <img
+      id="1-1-4"
+        style="
+          position: absolute;
+          left: 310px;
+          top:105px;
+          max-width: 13%;
+          width: 100%;
+          rotate: -7deg;
+          visibility: hidden;
+        "
+        src="./images/hy1.1.png"
+       
+      />
+      
+      </div>
+      <div class="simsubscreen" id="canvas2" style="visibility:hidden;">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;2&nbsp;</span>
+        <p class="steptext">&nbsp;Immerse the hydrometer into the cylinder and note down the reading of water level. (The difference in the 2 readings gives the volume of the hydrometer.</p>
+        <img
+      id="2-1-1"
+        style="
+          position: absolute;
+          left: 509px;
+          top: 262px;
+          max-width: 3%;
+          width: 100%;
+          height: 149px;
+          visibility: hidden;
+        "
+        src="./images/1..png"
+       
+      />
+      <div id="grad3a" style="position: absolute; left: 243px; top:418px; text-align:left;  width:134px;color:#888888; visibility: hidden; rotate: 90deg;"></div>
+      <div id="grad2a" style="position: absolute; top:418px; text-align:left; left: 276px; width:182px;color:#888888; visibility: hidden; rotate: 90deg;"></div>
+      
+      
+      
+      
+      <img
+      id="1-1-1a"
+        style="
+          position: absolute;
+          left: 279px;
+          top: 259px;
+          max-width: 9%;
+          width: 100%;
+         visibility: hidden;
+        "
+        src="./images/1.3a.png"
+       
+      />
+      <img
+      id="2-1-1a"
+        style="
+          position: absolute;
+          left: 294px;
+          top: 213px;
+          max-width: 3%;
+          width: 100%;
+          visibility: hidden;
+          
+        "
+        src="./images/1..png"
+       
+      />
+      <img
+        id="2-1-2"
+        style="
+          position: absolute;
+          left: 500px;
+          top: 260px;
+          max-width: 12%;
+          width: 100%;
+          visibility: hidden;
+        "
+        src="./images/1.1.png"
+       
+      />
+      <img
+      id="2-1-3"
+        style="
+          position: absolute;
+          left: 277px;
+          top: 132px;
+          max-width: 10%;
+          width: 100%;
+          visibility: hidden;
+        "
+        src="./images/step2Img.png"
+       
+      />
+      <p id="d2" style="position: absolute; font-size:14px; top: 68px; padding: 6px; visibility: hidden;">Initial reading (ml)= 900 ml <br><br>Final reading (ml) = 985 ml<br><br></p>
+
+      <!-- <span class="tooltip" style=" color:red;left: -444px; top: 34px;padding: 3px;width: 20%;">
+        <p style="border-bottom:1px dotted ; color:red;text-align:justify; width:271px; margin-top: 20px; margin-left: -17px;">Variables Used in Calculations</p>
+        <span class="tooltiptext"style="width:229px; top:-2px;left: 234px;height:95px;padding: 0px;">
+        <p style="position: absolute; padding: 6px;">Initial reading (ml)= 900 ml <br><br>  Final reading (ml) = 985 ml<br><br></p></span>
+      </span> -->
+      
+
+        <p id="form1" style="position:absolute; left:4px; top:185px; visibility:hidden">
+          <span id="tooltip" style=" left: 202px; top:3px;padding:3px; color:black;font-size: 18px; width:96px;height: 20px;">
+          <span class="tooltiptext"  id="ttp2" style="position: absolute; width:101px;height:27px;top:-93px;left:16px; padding: 6px; visibility: hidden;">
+          <span class="frac1" > Final - Initial</span></span></span>
+        </p>
+        <p id="a11" style="position: absolute; left: 284px; top: 141px; visibility: hidden;">ml</p>
+
+        <p id="iv1" style="position: absolute; left: 3px; top: 120px; font-size: 14px; visibility: hidden;">Volume of hydrometer, V<sub>h</sub> =
+          <input id="res1" type="text" style="border:none;border-bottom: 1px solid;width:55px;font-family:verdana;font-size:14px;text-align:center;" autocomplete="off" required="" onmouseover="showTooltip2()" onmouseout="hideTooltip2()">
+          <span id="rightAns1" style="top:25px;" class="resultStyle"></span>
+          <input id="chk1" style="position: absolute;left:306px; top:19px; font-size: 14px;" type="button" value="CHECK" onclick="hideButton1()">
+          <input id="Result1" type="button" value="RESULT" style=" visibility: hidden;margin-top: 20px;margin-left:23px;" onclick="evaluateArea1();">
+        </p>
+
+
+
+
+
+
+      </div>
+      <div class="simsubscreen" id="canvas3" style="visibility:hidden;">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;3&nbsp;</span>
+        <p class="steptext">
+          &nbsp;Measure the diameter of the measuring cylinder and find the area of the measuring cylinder.
+        </p>
+        <!-- <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;3&nbsp;</span>
+        <p class="steptext">&nbsp;Measure the diameter of the measuring cylinder and find the area of the measuring cylinder.</p> -->
+        <img
+         id="3-1-1"
+        style="
+          position: absolute;
+          left: 398px;
+          top: 332px;
+          transform: rotateX(161deg);
+         
+        "
+        src="./images/scale.png"
+       
+      />
+      <img
+      id="3-1-2"
+        style="
+          position: absolute;
+          left: 576px;
+          top: 318px;
+          width: 134px;
+          
+          visibility: hidden;
+        "
+        src="./images/hand2.png"
+       
+      />
+      <p id="d1" style="position: absolute; top: 36px; left: -4px; font-size: 14px; padding: 6px; visibility: hidden;">Diameter of measuring jar, d = 6.4 cm <br><br></p>
+      <span class="tooltip" style=" color:red;left: -444px; top: 34px;padding: 3px;width: 20%;">
+        <p style="border-bottom:1px dotted ; color:red;text-align:justify; width:271px; margin-top: 20px; margin-left: -17px;">Variables Used in Calculations</p>
+        <span class="tooltiptext"style="width:229px; top:-2px;left: 234px;height:95px;padding: 0px;">
+          
+        <p  style="position: absolute; padding: 6px;">Diameter of measuring jar, d = 6.4 cm <br><br></p></span>
+      </span>
+      <p id="a1" style="position: absolute; left: 270px; top: 70px; font-size:14px; visibility: hidden;">cm<sup>2</sup></p>
+      
+
+        <p id="form2" style="position:absolute; left:4px; top:185px; visibility:hidden">
+          <span id="tooltip" style=" left: 202px; top:3px;padding:3px; color:black;font-size: 18px; width:96px;height: 20px;">
+          <span class="tooltiptext"  id="ttp3" style="position: absolute; width:57px;height:27px;top:-89px;left:-18px; padding: 6px; visibility: hidden;">
+          <span class="frac1" ><sup>&pi;&#215; d<sup>2</sup></sup><span>&frasl;</span><sub>4 </sub></span></span></span>
+        </p>
+
+        <p id="iv2" style="position: absolute; left: 3px; top: 51px; font-size:14px; visibility: hidden;">Area of measuring jar, A =
+          <input id="res2" type="text" style="border:none;border-bottom: 1px solid;width:55px;font-family:verdana;font-size:14px;text-align:center;" autocomplete="off" required="" onmouseover="showTooltip3()" onmouseout="hideTooltip3()">
+          <span id="rightAns2" style="top:25px;" class="resultStyle"></span>
+          <input id="chk2" style="position: absolute;left:303px; top:19px; font-size: 14px;" type="button" value="CHECK" onclick="hideButton2()">
+          <input id="Result2" type="button" value="RESULT" style=" visibility: hidden;margin-top: 20px;margin-left: 30px; font-size: 14px;" onclick="evaluateArea2();">
+        </p>
+      </div>
+      <div class="simsubscreen" id="canvas4" style="visibility:hidden;">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;4&nbsp;</span>
+        <p class="steptext">&nbsp;Place the hydrometer on a clean sheet and trace the instrument along with its graduations.</p>
+        <img
+      id="4-1-1"
+        style="
+          position: absolute;
+          left: 221px;
+          top: 147px;
+          width: 193px;
+          
+          visibility: hidden;
+        "
+        src="./images/paper.png"
+       
+      />
+      <img
+      id="4-1-2"
+        style="
+          position: absolute;
+          left: 109px;
+          top: 162px;
+          max-width: 4%;
+          width: 100%;
+          height: 231px;
+          rotate: 33deg;
+        "
+        src="./images/1..png"
+       
+      />
+      <img
+      id="4-1-3"
+        style="
+          position: absolute;
+          left: -17px;
+          top: 162px;
+          width: 180px;
+          visibility: hidden;
+          
+        "
+        src="./images/hand3.png"
+       
+      />
+      <img
+      id="4-1-4"
+        style="
+          position: absolute;
+          left: 183px;
+          top: 107px;
+          width: 251px;
+          
+          visibility: hidden;
+        "
+        src="./images/hydroPaper.png"
+       
+      />
+      <img
+      id="4-1-5"
+        style="
+          position: absolute;
+          left: 398px;
+          top: 155px;
+          width: 78px;
+          visibility: hidden;
+          
+        "
+        src="./images/tracehand1.png"
+       
+      />
+      </div>
+      <div class="simsubscreen" id="canvas5" style="visibility:hidden;">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;5&nbsp;</span>
+        <p class="steptext">&nbsp; Measure the height of the bulb, H.</p>
+        <p id="d3" style="position: absolute; font-size:14px; top: 39px; padding: 6px; visibility: hidden;">Distance between neck and bottom of bulb, H = 16.6 cm<br><br></p>
+        <img
+      id="5-1-1"
+        style="
+          position: absolute;
+          left: 238px;
+          top: 29px;
+          max-width: 42%;
+          width: 100%;
+          visibility: hidden;
+        "
+        src="./images/measureHydro.png"
+       
+      />
+      <img
+      id="4-1-1a"
+        style="
+          position: absolute;
+          left: 284px;
+          top: 84px;
+          width: 243px;
+          
+          visibility: hidden;
+        "
+        src="./images/paper.png"
+       
+      />
+      <img
+      id="4-1-2a"
+        style="
+          position: absolute;
+          left: 338px;
+          top: 92px;
+         
+          width: 159px;
+          height: 320px;
+          rotate: 7deg;
+        "
+        src="./images/hyTraced.png"
+       
+      />
+      <img
+      id="3-1-1a"
+        style="
+          position: absolute;
+          left: 45px;
+          top: 73px;
+         
+          width: 178px;
+          height: 320px;
+          visibility: hidden;
+         
+        "
+        src="./images/scale11.png"
+       
+      />
+
+
+
+
+      </div>
+      <div class="simsubscreen" id="canvas6" style="visibility:hidden;">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;6&nbsp;</span>
+        <p class="steptext">&nbsp; Measure the height between hydrometer reading and neck, h.</p>
+        <p id="d4" style="position: absolute; font-size:14px; top: 26px; padding: 6px; visibility: hidden;">Distance between hydrometer reading and neck, h = 12 cm<br><br></p>
+
+        <img
+      id="6-1-1"
+        style="
+          position: absolute;
+          left: 238px;
+          top: 29px;
+          max-width: 42%;
+          width: 100%;
+          visibility: hidden;
+        "
+        src="./images/measureHydroRight.png"
+       
+      />
+      <img
+      id="3-1-11a"
+        style="
+          position: absolute;
+          left: 45px;
+          top: 73px;
+         
+          width: 178px;
+          height: 320px;
+          visibility: hidden;
+         
+        "
+        src="./images/scale11.png"
+       
+      />
+
+      </div>
+      <div class="simsubscreen" id="canvas7" style="visibility:hidden;">
+          <strong class="incanvas">STEP</strong>
+          <span class="circlebg">&nbsp;7&nbsp;</span>
+          <p class="steptext">&nbsp; Calculate effective depth He for corresponding corrected hydrometer reading, Rh values.</p>
+          <!-- <p id="iv" style="position:absolute; left:3px; top:102px; font-size: 21px; visibility:hidden;">He = H + <span class="frac"><sup>1</sup><span>&frasl;</span><sub>2</sub></span> (h - Vh <span>&frasl;</span>A) 
+           <span
+          class="tooltip"
+          style="
+            border-bottom: 1px dotted;
+            color: red;
+            text-align: justify;
+            top: -2px;
+          "
+          >Description
+          <span class="tooltiptext"> He = Effective depth corresponding to each reading.<br>
+            H   = Distance between neck and bottom of bulb.<br>
+            h   = Distance between hydrometer reading and neck.<br>
+            Vh = Volume of hydrometer.<br>
+            A  = Area of measuring jar.<br>
+ 
+            <p><strong style="color: red"></strong></p>
+            
+          </span>
+        </span> -->
+        <br>
+<span class="tooltip" style=" color:red;left: 14px; top: 34px;padding: 3px;width: 20%;">
+<p style="border-bottom:1px dotted ; color:red;text-align:justify; width:242px; margin-top: 20px; margin-left: -17px; "><b>Variables Used in Calculations</b></p>
+<span class="tooltiptext"style="width:436px; top:19px;left: 230px;height:170px;padding: 0px;">
+<p style="position: absolute; padding: 6px;">Distance between neck and bottom of bulb, H = 16.6 cm<br><br>  Distance between hydrometer reading and neck, h = 12 cm<br><br> Volume of hydrometer, V<sub>h</sub> = 85 ml <br><br> Area of measuring jar, A = 32.2 cm<sup>2</sup></p></span></span>
+
+<p id="form" style="position:absolute; left:4px; top:185px; visibility:hidden">
+  <span id="tooltip" style=" left: 202px; top:3px;padding:3px; color:black;font-size: 18px; width:96px;height: 20px;">
+  <span class="tooltiptext"  id="ttp1" style="position: absolute; width:101px;height:34px;top:-25px;left:204px; padding: 6px; visibility: hidden;">
+  <span class="frac1" ><sup> H + <span class="frac"><sup>1</sup><span>&frasl;</span><sub>2 </sub></span>(h - <span class="frac"><sup>V<sub>h</sub></sup><span>&frasl;</span><sub>A </sub></span>)</span></span></span></p>
+
+
+<p id="iv" style="position: absolute; left: 3px; top: 118px; visibility: hidden; font-size: 14px;">Effective depth corresponding to each reading, He =
+  <input id="res" type="text" style="border:none;border-bottom: 1px solid;width:55px;font-family:verdana;font-size:14px;text-align:center;" autocomplete="off" required="" onmouseover="showTooltip1()" onmouseout="hideTooltip1()">
+
+  
+  
+  <span id="rightAns" style="top:25px;" class="resultStyle"></span>
+  <input id="chk" style="position: absolute;left:483px; top:19px; font-size: 14px;" type="button" value="CHECK" onclick="hideButton()">
+  <input id="Result" type="button" value="RESULT" style=" visibility: hidden;margin-top: 20px;margin-left: 27px;" onclick="evaluateArea();">
+</p>
+<p id="d5" style="position: absolute; left: 457px; top: 142px; visibility: hidden;font-size: 14px;">cm</p>
+<p id="d10" style="position: absolute; left: 2px; top: 191px; visibility: hidden;font-size: 14px;">Similarly other values are calculated</p>
+<div id="subData1" style="position:absolute; left:357px; top:266px; width:318px; height:230.5px;visibility: hidden;">
+  <table id="tab2" style="position: absolute; width:217%; left: -348px;text-align:center; top: -25px;font-size: 13px;height: 69px; padding: 2px;  border:2px solid black">
+      <tr>
+          <td><b>Corrected hydrometer reading, Rh (cm)</b></td>
+          <td><b>Distance between hydrometer reading and neck, h (cm)</b></td>
+          <td><b>Effective depth corresponding to each reading, He (cm)</b></td>
+          
+      </tr>
+      <tr>
+        <td>0.995</td>
+        <td>12</td>
+        <td>18.98</td>
+        
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>10.5</td>
+        <td>17.48</td>
+        
+      </tr>
+      <tr>
+        <td>1.005</td>
+        <td>9</td>
+        <td>15.98</td>
+        
+      </tr>
+      <tr>
+        <td>1.01</td>
+        <td>7.5</td>
+        <td>14.48</td>
+        
+      </tr>
+      <tr>
+        <td>1.015</td>
+        <td>6</td>
+        <td>12.98</td>
+        
+      </tr>
+      <tr>
+        <td>1.02</td>
+        <td>4.65</td>
+        <td>11.63</td>
+        
+      </tr>
+      <tr>
+        <td>1.025</td>
+        <td>3.25</td>
+        <td>10.23</td>
+        
+      </tr>
+      <tr>
+        <td>1.03</td>
+        <td>2</td>
+        <td>8.98</td>
+        
+      </tr>
+      <tr>
+        <td>1.035</td>
+        <td>0.6</td>
+        <td>7.58</td>
+        
+      </tr>
+      
+      </table>
+  </div>
+
+
+
+      </div>
+      <div class="simsubscreen" id="canvas8" style="visibility:hidden;">
+          <strong class="incanvas">STEP</strong>
+          <span class="circlebg">&nbsp;8&nbsp;</span>
+          <p class="steptext">&nbsp; Draw the calibration curve between He and Rh on a normal graph sheet. </p>
+          <div id="graph1"></div>
+          <div id="subData2" style="position:absolute; left:357px; top:166px; width:318px; height:230.5px;visibility: hidden;">
+            <table id="tab3" style="position: absolute; width:217%; left: -358px;text-align:center; top: -37px;font-size: 13px;height: 69px; padding: 2px;  border:2px solid black">
+                <tr>
+                    <td><b>Corrected hydrometer reading, Rh (cm)</b></td>
+                    <td><b>Distance between hydrometer reading and neck, h (cm)</b></td>
+                    <td><b>Effective depth corresponding to each reading, He (cm)</b></td>
+                    
+                </tr>
+                <tr>
+                  <td>0.995</td>
+                  <td>12</td>
+                  <td>18.98</td>
+                  
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>10.5</td>
+                  <td>17.48</td>
+                  
+                </tr>
+                <tr>
+                  <td>1.005</td>
+                  <td>9</td>
+                  <td>15.98</td>
+                  
+                </tr>
+                <tr>
+                  <td>1.01</td>
+                  <td>7.5</td>
+                  <td>14.48</td>
+                  
+                </tr>
+                <tr>
+                  <td>1.015</td>
+                  <td>6</td>
+                  <td>12.98</td>
+                  
+                </tr>
+                <tr>
+                  <td>1.02</td>
+                  <td>4.65</td>
+                  <td>11.63</td>
+                  
+                </tr>
+                <tr>
+                  <td>1.025</td>
+                  <td>3.25</td>
+                  <td>10.23</td>
+                  
+                </tr>
+                <tr>
+                  <td>1.03</td>
+                  <td>2</td>
+                  <td>8.98</td>
+                  
+                </tr>
+                <tr>
+                  <td>1.035</td>
+                  <td>0.6</td>
+                  <td>7.58</td>
+                  
+                </tr>
+                
+                </table>
+            </div>
+          <button id="v1"style=" position:absolute;left: 20px; top: 464px;" onclick="viewData()">View Data</button>
+          <button id="v2" style="position:absolute;left: 600px; top: 464px;" onclick="viewGraph()">View Graph</button>
+
+
+
+
+
+      </div>
+      <div class="simsubscreen" id="canvas9" style="visibility:hidden;">
+        <h1 id="p12-1" style="position: absolute; left: 116px; top: 171px; color: grey; text-align: center;visibility: hidden;">Soil Sample Preparation</h1>
+      <strong class="incanvas" id="incanvas4" style="visibility: hidden;">STEP</strong>
+      <span class="circlebg" id="circlebg4" style="visibility: hidden;">&nbsp;9&nbsp;</span>
+      <p class="steptext" id="steptext4" style="visibility: hidden;">&nbsp; Weigh accurately 50 grams of soil passing through a 75-micron sieve.</p>
+      <img
+      id="9-1-6"
+        style="
+          position: absolute;
+          left: 384px;
+          top: 248px;
+          width: 272px;
+          
+          visibility: hidden;
+        "
+        src="./images/wm1.png"
+       
+      />
+      <img
+      id="9-1-1"
+        style="
+          position: absolute;
+          left: 183px;
+          top: 404px;
+          width: 289px;
+          
+          visibility: hidden;
+        "
+        src="./images/plate.png"
+       
+      />
+      <img
+      id="9-1-5"
+        style="
+          position: absolute;
+          left: 183px;
+          top: 417px;
+          width: 289px;
+          
+          visibility: hidden;
+        "
+        src="./images/emptyPlate.png"
+       
+      />
+      <img
+      id="9-1-2"
+        style="
+          position: absolute;
+          left: 253px;
+          top: 221px;
+          width: 167px;
+          height: 232px;
+          
+          visibility: hidden;
+        "
+        src="./images/sandDrop.png"
+       
+      />
+      <div id="grad6" style="position: absolute; left: 226px; top:117px; text-align:left;  width:208px; height: 136px;color:#d4d3d3; visibility: hidden; "></div>
+      <img
+      id="9-1-4"
+        style="
+          position: absolute;
+          left: 246px;
+          top: 58px;
+          width: 179px;
+          background-color: white;
+          
+          visibility: hidden;
+        "
+        src="./images/page.png"
+       
+      />
+      <img
+      id="9-1-3"
+        style="
+          position: absolute;
+          left: 234px;
+          top: 178px;
+          width: 179px;
+          
+          visibility: hidden;
+        "
+        src="./images/pan.png"
+       
+      />
+      <p  id="gram" style="position: absolute; left: 504px;top: 326px; visibility: hidden;">50.0</p>
+      
+      
+      
+
+
+      </div>
+      <div class="simsubscreen" id="canvas10" style="visibility:hidden;">
+      <strong class="incanvas">STEP</strong>
+      <span class="circlebg">&nbsp;10&nbsp;</span>
+      <p class="steptext">&nbsp; Add 2-3 drops of dispersing agent and 70 ml of water and mix thoroughly.</p>
+      <div id="grad2c" style="position: absolute; top:319px; text-align:left; left: 189px; width:87px;color:#888888; visibility: hidden; rotate: 6deg; "></div>
+
+      <div id="grad7" style="position: absolute; top:345px; text-align:left; left: 225px; width:182px;color:#888888; visibility: hidden; rotate: 90deg;"></div>
+      
+      
+      <img
+      id="10-1-3"
+        style="
+          position: absolute;
+          left: 310px;
+          top: 123px;
+          max-width: 2%;
+          width: 100%;
+         visibility: hidden;
+        "
+        src="./images/drop1.png"
+       
+      />
+      <img
+      id="10-1-3a"
+        style="
+          position: absolute;
+          left: 310px;
+          top: 123px;
+          max-width: 2%;
+          width: 100%;
+         visibility: hidden;
+        "
+        src="./images/drop1.png"
+       
+      />
+      <img
+      id="10-1-3b"
+        style="
+          position: absolute;
+          left: 310px;
+          top: 123px;
+          max-width: 2%;
+          width: 100%;
+         visibility: hidden;
+        "
+        src="./images/drop1.png"
+       
+      />
+      <img
+      id="10-1-1"
+        style="
+          position: absolute;
+          left: 279px;
+          top: 154px;
+          max-width: 11%;
+          width: 100%;
+          visibility: hidden;
+        "
+        src="./images/1.3a.png"
+       
+      />
+      <img
+      id="10-1-2"
+        style="
+          position: absolute;
+          left: 508px;
+          top: 376px;
+          max-width: 4%;
+          width: 100%;
+          visibility: hidden;
+          
+        "
+        src="./images/drops.png"
+        title="Dispersing agent"
+      />
+      <img
+      id="10-1-4"
+        style="
+          position: absolute;
+          left: 246px;
+          top: 376px;
+          max-width: 49%;
+          width: 100%;
+          visibility: hidden;
+        "
+        src="./images/plate.png"
+       
+      />
+      <img
+      id="10-1-5"
+        style="
+          position: absolute;
+          left: 246px;
+          top: 376px;
+          max-width: 47%;
+          width: 100%;
+          visibility: hidden;
+        "
+        src="./images/plateWithWater.png"
+       
+      />
+      <img
+      id="10-1-7"
+        style="
+          position: absolute;
+          left: 69px;
+          top: 232px;
+          
+          width: 177px;
+          visibility: hidden;
+        "
+        src="./images/trowel.png"
+        title="Trowel"
+      />
+      <div id="grad2d" style="position: absolute; top:319px; text-align:left; left: 189px; width:87px; border-radius: 7px; color:#888888; visibility: hidden; rotate: 87deg; "></div>
+
+      
+
+    
+      </div>
+      <div class="simsubscreen" id="canvas11" style="visibility:hidden;">
+      <strong class="incanvas">STEP</strong>
+      <span class="circlebg">&nbsp;11&nbsp;</span>
+      <p class="steptext">&nbsp; Transfer this mixture to the blender jar and blend the mixture for 5mins.</p>
+      <img
+      id="11-1-1"
+        style="
+          position: absolute;
+          left: 344px;
+          top: -28px;
+          width: 391px;
+          
+          visibility: hidden;
+        "
+        src="./images/mechanicalMixer.png"
+       
+      />
+      <img
+      id="11-1-2"
+        style="
+          position: absolute;
+          left: 121px;
+          top: 405px;
+          width: 217px;
+          
+          visibility: hidden;
+        "
+        src="./images/plate.png"
+       
+      />
+      <img
+      id="11-1-3"
+        style="
+          position: absolute;
+          left: 121px;
+          top: 405px;
+          width: 217px;
+          transform: rotateY(180deg);
+          visibility: hidden;
+        "
+        src="./images/mudHand.png"
+       
+      />
+      <img
+      id="11-1-4"
+        style="
+          position: absolute;
+          left: 421px;
+          top: 69px;
+          width: 234px;
+          
+          visibility: hidden;
+        "
+        src="./images/mixerrr.png"
+       
+      />
+      <img
+      id="11-1-5"
+        style="
+          position: absolute;
+          left: 481px;
+          top: 208px;
+          width: 17px;
+          
+          visibility: hidden;
+        "
+        src="./images/rod.png"
+       
+      />
+      <img
+      id="11-1-6"
+        style="
+          position: absolute;
+          left: 592px;
+          top: 272px;
+          width: 24px;
+          
+          visibility: hidden;
+        "
+        src="./images/swicth.png"
+       
+      />
+
+
+      </div>
+      <div class="simsubscreen" id="canvas12" style="visibility:hidden;">
+      <strong class="incanvas">STEP</strong>
+      <span class="circlebg">&nbsp;12&nbsp;</span>
+      <p class="steptext">&nbsp; Carefully transfer the mixture to a measuring cylinder and add distilled water to make the volume exactly equal to 1000 ml.</p>
+      <div id="grad41" style="position: absolute; top:144px; text-align:left; left: 310px; width:8px; border-radius: 10px;color:#888888; visibility: hidden; "></div>
+      <div id="grad21" style="position: absolute; top:418px; text-align:left; left: 276px; width:182px;color:#888888; visibility: hidden; rotate: 90deg;"></div>
+      <div id="grad1" style="position: absolute; top:455px; text-align:left; left: 236px; width:157px;color:#888888; visibility: hidden; rotate: 0deg;"></div>
+
+      
+      <img
+      id="12-1-1"
+        style="
+          position: absolute;
+          left: 279px;
+          top: 154px;
+          max-width: 11%;
+          width: 100%;
+          visibility: hidden;
+         
+        "
+        src="./images/1.3a.png"
+       
+      />
+      <img
+      id="12-1-2"
+        style="
+          position: absolute;
+          left: 538px;
+          top: 148px;
+          max-width: 13%;
+          width: 100%;
+          rotate: 83deg;
+          visibility: hidden;
+        "
+        src="./images/hyWithColorB.png"
+       
+      />
+      <img
+      id="12-1-3"
+        style="
+          position: absolute;
+          left: 310px;
+          top:105px;
+          max-width: 13%;
+          width: 100%;
+          rotate: -7deg;
+          visibility: hidden;
+        "
+        src="./images/hy1.1.png"
+       
+      />
+      <img
+      id="1-1-3a"
+        style="
+          position: absolute;
+          left: 538px;
+          top: 148px;
+          max-width: 13%;
+          width: 100%;
+          rotate: 83deg;
+          visibility: hidden;
+        "
+        src="./images/hyWithColor.png"
+       
+      />
+      
+
+   
+      </div>
+      <div class="simsubscreen" id="canvas13" style="visibility:hidden;">
+      <h1 id="p13-1" style="position: absolute; left: 25px; top: 171px; color: grey; text-align: center;visibility: hidden;">Sedimentation test with hydrometer</h1>
+      <strong class="incanvas" id="incanvas1" style="visibility: hidden;">STEP</strong>
+      <span class="circlebg" id="circlebg1" style="visibility: hidden;">&nbsp;13&nbsp;</span>
+      <p class="steptext" id="steptext1" style="visibility: hidden;">&nbsp; Shake the contents in the measuring jar and allow it to stand. Immerse the hydrometer into the jar gently, a little below the free surface, and allow it to float freely. Immediately start the stopwatch. </p>
+      <h1 id="d21" style="position: absolute; left: 336px; top: 112px; width: 418px; font-size:16px;color: grey; text-align: center;visibility: hidden;">After 24 hours the hydrometer reading is noted</h1>
+
+      <img
+      id="13-1-2"
+        style="
+          position: absolute;
+          left: 368px;
+          top: 308px;
+          max-width: 5%;
+          width: 100%;
+          visibility: hidden;
+          rotate: -1deg;
+         
+        "
+        src="./images/colorB.png"
+       
+      />
+      <img
+      id="13-1-1a"
+        style="
+          position: absolute;
+          left: 357px;
+          top: 247px;
+          max-width: 9%;
+          width: 100%;
+          visibility: hidden;
+         
+        "
+        src="./images/1.3a.png"
+       
+      />
+      <img
+      id="13-1-1b"
+        style="
+          position: absolute;
+          left: 357px;
+          top: 247px;
+          max-width: 9%;
+          width: 100%;
+          visibility: hidden;
+         
+        "
+        src="./images/1.3a.png"
+       
+      />
+      <div id="grad211" style="position: absolute; top:310px; text-align:left; left: 217px; width:182px;color:#888888; visibility: hidden; rotate: 90deg;"></div>
+
+
+      <img
+      id="13-1-1"
+        style="
+          position: absolute;
+          left: 209px;
+          top: 154px;
+          max-width: 30%;
+          width: 100%;
+          rotate: 25deg;
+          visibility: hidden;
+         
+        "
+        src="./images/shakeTube.png"
+       
+      />
+      <img
+      id="13-1-3"
+        style="
+          position: absolute;
+          left: 535px;
+          top: 336px;
+          max-width: 3%;
+          width: 100%;
+          visibility: hidden;
+          
+        "
+        src="./images/1..png"
+       
+      />
+      <img
+      id="13-1-3a"
+        style="
+          position: absolute;
+          left: 299px;
+          top: 208px;
+          height: 142px;
+          max-width: 3%;
+          width: 100%;
+          visibility: hidden;
+          
+        "
+        src="./images/1..png"
+       
+      />
+      <img
+        id="13-1-4"
+        style="
+          position: absolute;
+          left: 535px;
+          top: 336px;
+          
+          width: 80px;
+          visibility: hidden;
+        "
+        src="./images/1.1.png"
+       
+      />
+      <img
+      id="13-1-5"
+        style="
+          position: absolute;
+          left: 541px;
+          top: 66px;
+          max-width: 21%;
+          width: 100%;
+          
+          visibility: hidden;
+         
+        "
+        src="./images/sw.png"
+       
+      />
+      <img
+      id="13-1-6"
+        style="
+          position: absolute;
+          left: 468px;
+          top: 139px;
+         
+          width: 11px;
+          
+          visibility: hidden;
+         
+        "
+        src="./images/pin.png"
+       
+      />
+      <img
+      id="13-1-3b"
+        style="
+          position: absolute;
+          left: 374px;
+          top: 251px;
+          height: 142px;
+          max-width: 3%;
+          width: 100%;
+          visibility: hidden;
+          
+        "
+        src="./images/1..png"
+       
+      />
+      <img
+      id="13-1-3c"
+        style="
+          position: absolute;
+          left: 374px;
+          top: 251px;
+          height: 142px;
+          max-width: 3%;
+          width: 100%;
+          visibility: hidden;
+          
+        "
+        src="./images/1..png"
+       
+      />
+      <img
+      id="13-1-3d"
+        style="
+          position: absolute;
+          left: 374px;
+          top: 251px;
+          height: 142px;
+          max-width: 3%;
+          width: 100%;
+          visibility: hidden;
+          
+        "
+        src="./images/1..png"
+       
+      />
+
+      <div id="data" style="position:absolute; left:-357px; top:-101px; width:318px; height:308.5px;visibility: hidden;">
+        <table id="obsData"  style="position:absolute; font-size:12px; text-align:center;padding: 2px; width: 378px;top: 187px;left: 329px;height: 40px; border:2px solid black">
+                <tr>
+                    <td><b>Time Elapsed, t (min)</b></td>
+                    <td><b>Hydrometer reading,  (cm)</b></td>
+                   
+                </tr>
+        </table></div>
+    
+    
+    
+      </div>
+      <div class="simsubscreen" id="canvas14" style="visibility:hidden;">
+      <strong class="incanvas">STEP</strong>
+      <span class="circlebg">&nbsp;14&nbsp;</span>
+      <p class="steptext">&nbsp; Calculate the corrected hydrometer readings after applying meniscus correction.</p>
+      <span class="tooltip" style=" color:red;left: 14px; top: 34px;padding: 3px;width: 20%;">
+        <p style="border-bottom:1px dotted ; color:red;text-align:justify; width:237px; margin-top: 20px; margin-left: -17px;"><b>Variables Used in Calculations</b></p>
+        <span class="tooltiptext"style="width:285px; top:-3px;left: 224px;height:88px;padding: 0px;">
+        <p style="position: absolute; padding: 6px;">Meniscus correction, Cm = +0.001<br><br>Hydrometer reading, Rh<sup>'</sup> (cm)= 1.016</p></span></span>
+        
+        <p id="form11" style="position:absolute; left:4px; top:185px; visibility:hidden">
+          <span id="tooltip" style=" left: 202px; top:3px;padding:3px; color:black;font-size: 18px; width:96px;height: 20px;">
+          <span class="tooltiptext"  id="ttp5" style="position: absolute; width:113px;height:34px;top:-25px;left:77px; padding: 6px; visibility: hidden;">
+          <span class="frac1" >Rh = Rh<sup>'</sup>+ Cm</span></span></span></span></p>
+        
+        
+        <p id="iv11" style="position: absolute; left: 3px; top: 118px; visibility: hidden; font-size: 14px;">Corrected Hydrometer reading, Rh = 
+          <input id="res11" type="text" style="border:none;border-bottom: 1px solid;width:55px;font-family:verdana;font-size:14px;text-align:center;" autocomplete="off" required="" onmouseover="showTooltip11()" onmouseout="hideTooltip11()">
+        
+          
+          
+          <span id="rightAns11" style="top:25px;" class="resultStyle"></span>
+          <input id="chk11" style="position: absolute;left:366px; top:19px; font-size: 14px;" type="button" value="CHECK" onclick="hideButton11()">
+          <input id="Result11" type="button" value="RESULT" style=" visibility: hidden;margin-top: 20px;margin-left: 22px;" onclick="evaluateArea11();">
+        </p>
+        <p id="d51" style="position: absolute; left: 343px; top: 142px; visibility: hidden;font-size: 14px;">cm</p>
+        <p id="d52" style="position: absolute; left: 2px; top: 209px; visibility: hidden;">Similarly other values are calculated</p>
+
+
+
+
+
+
+      <img
+      id="14-1-2"
+        style="
+          position: absolute;
+          left: 374px;
+          top: 308px;
+          max-width: 5%;
+          width: 100%;
+          visibility: hidden;
+          rotate: -1deg;
+         
+        "
+        src="./images/colorB.png"
+       
+      />
+      <img
+      id="14-1-1"
+        style="
+          position: absolute;
+          left: 363px;
+          top: 247px;
+          max-width: 9%;
+          width: 100%;
+          visibility: hidden;
+         
+        "
+        src="./images/1.3a.png"
+       
+      />
+      <img
+      id="14-1-3a"
+        style="
+          position: absolute;
+          left: 381px;
+           top: 256px;
+          height: 142px;
+          max-width: 3%;
+          width: 100%;
+          visibility: hidden;
+          
+        "
+        src="./images/1..png"
+       
+      />
+      <img
+      id="14-1-6"
+        style="
+          position: absolute;
+          left: 610px;
+          top: 121px;
+          rotate: 46deg;
+         
+          width: 11px;
+          
+          visibility: hidden;
+         
+        "
+        src="./images/pin.png"
+       
+      />
+
+      
+      
+      
+        
+    
+    
+    
+    
+    
+    
+      </div>
+      <div class="simsubscreen" id="canvas15" style="visibility:hidden;">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;15&nbsp;</span>
+        <p class="steptext">&nbsp;Find out the corresponding readings of He for corrected hydrometer readings from He vs Rh curve.
+        </p>
+        <!-- <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV -->
+        <div id="graph3"></div>
+      </div>
+
+      <div class="simsubscreen" id="canvas16" style="visibility:hidden;">
+          
+          <h1 id="d11" style="position: absolute; left: 25px; top: 171px; color: grey; text-align: center;visibility: hidden;">Similarly other values are calculated</h1>
+          <!-- <h1 id="p14-1" style="position: absolute; left: 25px; top: 171px; color: grey; text-align: center;visibility: hidden;">Similarly all other values are calculated.</h1> -->
+          <div id="con4" style="visibility: hidden;"><h3 class="con" id="con4" style="position:absolute;top:68px; left:40px;height: 21px; margin-top: -7px;margin-left: -16px; font-size: 20px; "><b>Calculations:</b></h3></div>
+
+          
+      </div>  
+
+      <div class="simsubscreen" id="canvas17" style="visibility:hidden;">
+      <strong class="incanvas">STEP</strong>
+      <span class="circlebg">&nbsp;16&nbsp;</span>
+      <p class="steptext">&nbsp; Calculation and Observation.</p>
+      <img
+       id="15-1-1"
+       style="
+      position: absolute;
+      left: 449px;
+      top: 237px;
+      max-width: 8%;
+      width: 100%;
+     visibility: hidden;
+      "
+       src="./images/tubee.png"
+   
+      />
+      <img
+      id="15-1-2"
+        style="
+          position: absolute;
+          left: 380px;
+          top: 249px;
+          height: 142px;
+          max-width: 3%;
+          width: 100%;
+          visibility: hidden;
+          
+        "
+        src="./images/1..png"
+       
+      />
+      <img
+        id="15-1-3"
+        style="
+          position: absolute;
+          left: 285px;
+          top: 191px;
+          max-width: 12%;
+          width: 100%;
+          visibility: hidden;
+        "
+        src="./images/1.1.png"
+       
+      />
+      <input id="12-1" style="position:absolute;left:443px;top:440px; font-size: 14px; cursor:pointer; border:1px solid double; background:#cbc8c7; width:15%; height:6%;"
+type="button" onclick="Observation()" value = "CHECK" >
+<input id="Result4" style="visibility:hidden;position:absolute;width:112px;left:443px;height:6%;top:441px;cursor:pointer; border:1px solid double; background:#cbc8c7;
+"type="button" value="RESULT"
+style= "top:250px; visibility: hidden;" onclick="evaluateArea4();document.getElementById('nextButton').style.visibility='visible'"></p>
+<span class="tooltip" id="vari1"style=" color:red;left: 14px; top: -8px;padding: 3px;width: 20%; font-size:14px; visibility: hidden;">
+  <p style="border-bottom:1px dotted ; color:red;text-align:justify; width:241px; margin-top: 20px; margin-left: -17px;"><b>Variables Used in Calculations</b></p>
+  <span class="tooltiptext"style="width:343px; top:26px;left: 223px;height:129px;padding: 0px;">
+  <p style="position: absolute; padding: 6px;">Time elapsed, t = 0.25 min<br><br>Effective length, He = 12.4 cm<br><br> Corrected hydrometer reading, Rh = 1.017 cm</p></span></span>
+  
+
+
+
+<table id="12-1ob"  style="position:absolute;padding: 2px; left:91px; top:99px; font-size:13px; width:74%;text-align:center;border:2px solid black; visibility: hidden;">
+        <tr>
+        <td  style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; height:20px; ">Meniscus correction, Cm</td>
+        <td id="Dial" style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; "> 0.001 </td>
+        </tr>
+        <tr>
+          <td  style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; height:20px; ">% of silt and clay (%)</td>
+          <td id="Dial1" style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; "> 0.5 </td>
+          </tr>
+        <tr>
+        <td  style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">Specific gravity of soil, G </td>
+        <td id="Deform" style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; "> 2.57 </td>
+        </tr>
+        <tr>
+        <td  style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">n (poise)</td>
+        <td id="load" style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">  0.008</td>
+        </tr>
+        <!-- <tr>
+        <td style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">Corrected hydrometer reading, Rh </td>
+        <td  style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">
+        <div class="tooltip" style="width:150px;">
+          <input id="s11"  class="tooltip" type="text" style="text-align:center;width:130px;"  autocomplete="off"><span id="rightAns7" class="resultStyle7"></span>
+          <span class="tooltiptext" style="width:112px;height: 34px;"> Rh = Rh<sup>`</sup>+ Cm
+          </span>
+            </div></td></tr> -->
+            <!-- <tr>
+              <td style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; "> Corrected hydrometer reading, Rh</td>
+              <td  style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">
+                <div class="tooltip" style="width:220px;">
+                  <input id="s11" type="text" style="text-align:center;width: 130px;" autocomplete="off" required ><span id="rightAns4" class="resultStyle4" ></span>
+                  <span class="tooltiptext" style="width:112px; height: 34px;">Rh = Rh<sup>'</sup>+ Cm</span>
+                </div></td></tr> -->
+            <!-- <tr>
+              <td style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">Particle size D, </td>
+              <td  style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">
+              <div class="tooltip" style="width:150px;">
+                <input id="s1"  class="tooltip" type="text" style="text-align:center;width:130px;"  autocomplete="off"><span id="rightAns4" class="resultStyle4"></span>
+                <span class="tooltiptext" style="width:184px;height: 34px;">D=sqrt(<span class="frac"><sup>30&times;n &times;He</sup><span>&frasl;</span><sub>((G-1)&times;981&times;t)</sub></span> )</span>
+                  </div></td></tr> -->
+
+                  <tr>
+                    <td style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">Particle size, D (cm)</td>
+                    <td  style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">
+                      <div class="tooltip" style="width:220px;">
+                        <input id="s1" type="text" style="text-align:center;width: 130px;" autocomplete="off" required><span id="rightAns5" class="resultStyle5" ></span>
+                        <span class="tooltiptext" style="width:161px; height: 34px;">sqrt(<span class="frac"><sup>30&times;n &times;He</sup><span>&frasl;</span><sub>((G-1)&times;981&times;t)</sub></span> )</span>
+                      </div></td></tr>
+
+            
+            
+            
+            <!-- <tr>
+        <td style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">%Finer, N<sup>`</sup></td>
+        <td  style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">
+          <div class="tooltip" style="width:150px;">
+            <input id="s2" type="text" style="text-align:center;width: 130px;" autocomplete="off" ><span id="rightAns6" class="resultStyle6"></span>
+                <span class="tooltiptext" style="width:150px; height: 34px;">N<sup>`</sup>=<span class="frac"><sup>G(Rh-1)&times;10<sup>5</sup></sup><span>&frasl;</span><sub>((g-1)&times;50)</sub></span></span>
+          </div></td></tr>-->
+          <tr> 
+            <td style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">%Finer, N<sup>'</sup></td>
+            <td  style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">
+              <div class="tooltip" style="width:220px;">
+                <input id="s2" type="text" style="text-align:center;width: 130px;" autocomplete="off" required ><span id="rightAns6" class="resultStyle6" ></span>
+                <span class="tooltiptext" style="width:150px; height: 34px;">N<sup>'</sup>=<span class="frac"><sup>G(Rh-1)&times;10<sup>5</sup></sup><span>&frasl;</span><sub>((G-1)&times;50)</sub></span></span>
+              </div></td></tr>
+          
+          <tr> 
+        <td style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; "> N</td>
+        <td  style="text-align:center; font-family:verdana; font-size:12px; padding: 10px; ">
+          <div class="tooltip" style="width:220px;">
+            <input id="s3" type="text" style="text-align:center;width: 130px;" autocomplete="off" required ><span id="rightAns7" class="resultStyle7" ></span>
+            <span class="tooltiptext" style="width:146px; height: 37px;">%Finer &times;% of silt and clay</span>
+          </div></td></tr></table>
+
+    
+    
+      </div>
+      <div class="simsubscreen" id="canvas18" style="visibility:hidden;">
+        <h1 id="p14-1" style="position: absolute; left: 25px; top: 171px; color: grey; text-align: center; justify-content: center; visibility: hidden;">Similarly other values are calculated</h1>
+        <!-- <strong class="incanvas" id="incanvas2" style="visibility: hidden;">STEP</strong>
+        <span class="circlebg" id="circlebg2" style="visibility: hidden;">&nbsp;16&nbsp;</span>
+        <p class="steptext" id="steptext2" style="visibility: hidden;">&nbsp;  </p> -->
+        <div id="con1" style="visibility: hidden;"><h3 class="con" id="con" style="position:absolute;top:30px; left:40px;height: 21px; margin-top: -7px;margin-left: -16px; font-size: 20px; "><b>Calculations:</b></h3></div>
+        <div id="subData" style="position:absolute; left:357px; top:163px; width:318px; height:308.5px;visibility: hidden;">
+          <table id="tab" style="position: absolute; width:217%; left: -348px;text-align:center; top: -20px;font-size: 13px;height: 69px; padding: 2px;  border:2px solid black">
+              <tr>
+                  <td><b>Time elapsed, t (min)</b></td>
+                  <td><b>Hydrometer reading, Rh (cm)<sup>'</sup></b></td>
+                  <td><b>Corrected Hydrometer Reading, Rh (cm)</b></td>
+                  <td><b>Effective length, He (cm)</b></td>
+                  <td><b>Particle size, D (cm)</b></td>
+                  <td><b>% Finer N<sup>'</sup></b></td>
+                  <td><b>N</b></td>
+              </tr>
+              <tr>
+                <td>0.25</td>
+                <td>1.016</td>
+                <td>1.017</td>
+                <td>12.4</td>
+                <td>0.0879</td>
+                <td>55.59</td>
+                <td>27.8</td>
+              </tr>
+              <tr>
+                <td>0.5</td>
+                <td>1.0155</td>
+                <td>1.0165</td>
+                <td>12.6</td>
+                <td>0.0627</td>
+                <td>53.96</td>
+                <td>26.98</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>1.015</td>
+                <td>1.016</td>
+                <td>12.75</td>
+                <td>0.0446</td>
+                <td>52.32</td>
+                <td>26.16</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>1.0135</td>
+                <td>1.0145</td>
+                <td>13.2</td>
+                <td>0.0321</td>
+                <td>47.42</td>
+                <td>2371</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>1.012</td>
+                <td>1.013</td>
+                <td>13.9</td>
+                <td>0.0233</td>
+                <td>42.51</td>
+                <td>21.26</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>1.0095</td>
+                <td>1.0105</td>
+                <td>14.4</td>
+                <td>0.0167</td>
+                <td>34.34</td>
+                <td>17.17</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>1.0085</td>
+                <td>1.0095</td>
+                <td>14.7</td>
+                <td>0.0199</td>
+                <td>31.07</td>
+                <td>15.54</td>
+              </tr>
+              <tr>
+                <td>32</td>
+                <td>1.007</td>
+                <td>1.008</td>
+                <td>15.1</td>
+                <td>0.0086</td>
+                <td>26.16</td>
+                <td>13.08</td>
+              </tr>
+              <tr>
+                <td>64</td>
+                <td>1.0055</td>
+                <td>1.0065</td>
+                <td>15.5</td>
+                <td>0.0061</td>
+                <td>21.26</td>
+                <td>10.63</td>
+              </tr>
+              <tr>
+                <td>24&times;60</td>
+                <td>1.0010</td>
+                <td>1.0020</td>
+                <td>16.8</td>
+                <td>0.0013</td>
+                <td>6.54</td>
+                <td>3.27</td>
+              </tr>
+              
+              </table>
+
+        </div>
+  
+      <!-- </div> -->
+      
+        <div id="con3" style="visibility: hidden;"><h3 class="con" id="con" style="position:absolute;top:69px; left:40px;height: 21px; margin-top: -7px;margin-left: -16px; font-size: 20px; "><b>Calculations:</b></h3></div>
+        <div id="subData3" style="position:absolute; left:357px; top:163px; width:318px; height:308.5px;visibility: hidden;">
+          <table id="tab3" style="position: absolute; width:217%; left: -348px;text-align:center; top: -20px;font-size: 13px;height: 69px; padding: 2px;  border:2px solid black">
+              <tr>
+                  
+                  <td><b>Time elapsed, t (min)</b></td>
+                  <td><b>Hydrometer reading, Rh' (cm)</b></td>
+                  
+                  <td><b>Corrected Hydrometer Reading, Rh (cm)</b></td>
+              </tr>
+              <tr>
+                <td>0.25</td>
+                <td>1.016</td>
+                <td>1.017</td>
+                
+              </tr>
+              <tr>
+                <td>0.5</td>
+                <td>1.0155</td>
+                <td>1.0165</td>
+                
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>1.015</td>
+                <td>1.016</td>
+                
+              </tr>
+              
+              <tr>
+                <td>2</td>
+                <td>1.0135</td>
+                <td>1.0145</td>
+                
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>1.012</td>
+                <td>1.013</td>
+                
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>1.0095</td>
+                <td>1.0105</td>
+                
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>1.0085</td>
+                <td>1.0095</td>
+                
+              </tr>
+              <tr>
+                <td>32</td>
+                <td>1.007</td>
+                <td>1.008</td>
+                
+              </tr>
+              <tr>
+                <td>64</td>
+                <td>1.0055</td>
+                <td>1.0065</td>
+                
+              </tr>
+              <tr>
+                <td>24*60</td>
+                <td>1.001</td>
+                <td>1.002</td>
+                
+              </tr>
+              
+              </table>
+
+        </div>
+
+      </div>
+
+       <div class="simsubscreen" id="canvas19" style="visibility:hidden;">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;17&nbsp;</span>
+        <p class="steptext">&nbsp; Plot graph of N<sup>'</sup> vs D on a semi-log graph, which gives us the particle size distribution curve for the given fine-grained soil. </p>
+        <div id='myDiv1' ></div>
+        
+      
+      </div>
+      </div>
+      
+
+        <div id="nav">
+        <img id="nextButton" onclick="navNext()" src="./images/Next.png" />
+        </div>
+      <img class ="" id="arrow1" style="visibility:hidden;" src="images/arrow1.png"/>
+
+
+      <script  src="./js/script.js"></script>
+      <script src="./js/plotly-latest.min.js"></script>
+      <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+      
+      
+      <script>
+        var simsubscreennum = 0;
+        var temp = 0;
+        
+        let tableData = document.getElementById("obsData");
+        let tableData1 = document.getElementById("tab");
+      </script>
+  
+
+    
+
+      <div id="copyright">
+        &copy; 2020 - 
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources
+        & Ocean Engineering
+      </div>
+    
+  </body>
 </html>
