@@ -24,7 +24,7 @@
 
     ![Alt text](images/7.JPG)
 
-7. Calculate the effective depth and enter the values. Click on the "Check" and "Result button to verify the correct answer. Similarly other values are also calculated.
+7. Calculate the effective depth and enter the values. Click on the "Check" and "Result" button to verify the correct answer. Similarly other values are also calculated.
 
     ![Alt text](images/8.jpg)
 
@@ -36,11 +36,11 @@
 
     ![Alt text](images/10.JPG)
 
-10. Click on the pan to place it on the weighing machine and weigh 50 gm of soil.
+10. Click on the pan to place it on the weighing machine and weigh 50g of soil.
 
     ![Alt text](images/11.jpg)
 
-11.  Add 2-3 drops of dispersing agent by clicking on the bottle containing the dispersing agent . Add 70 ml of water and mix it thoroughly.
+11.  Add 2-3 drops of dispersing agent by clicking on the bottle containing the dispersing agent. Add 70ml of water and mix it thoroughly.
 
     ![Alt text](images/12.jpg)
 
