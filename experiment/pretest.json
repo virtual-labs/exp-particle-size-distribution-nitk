@@ -10,10 +10,10 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "In hydrometer analysis, particle size distribution is determined based on the stoke’s law principle and not particle shape.  <a href='www.google.com'>here</a>",
-        "b": "In hydrometer analysis, particle size distribution is determined based on the stoke’s law principle and not particle size.",
-        "c": "In hydrometer analysis, particle size distribution is determined based on the stoke’s law principle",
-        "d": "In hydrometer analysis, particle size distribution is determined based on the stoke’s law principle."
+        "a": "In hydrometer analysis, particle size distribution is determined based on the stoke's law principle and not particle shape.",
+        "b": "In hydrometer analysis, particle size distribution is determined based on the stoke's law principle and not particle size.",
+        "c": "In hydrometer analysis, particle size distribution is determined based on the stoke's law principle",
+        "d": "In hydrometer analysis, particle size distribution is determined based on the stoke's law principle."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -27,7 +27,7 @@
         "d": "Density"
       },
       "explanations": {
-        "a": "The point at which the surface of the liquid touches the stem of the hydrometer correlates to relative density.  <a href='www.google.com'>here</a>",
+        "a": "The point at which the surface of the liquid touches the stem of the hydrometer correlates to relative density.",
         "b": "The point at which the surface of the liquid touches the stem of the hydrometer correlates to relative density and thus not relative mass.",
         "c": "The point at which the surface of the liquid touches the stem of the hydrometer correlates to relative density and thus not absolute density.",
         "d": "The point at which the surface of the liquid touches the stem of the hydrometer correlates to relative density and thus not density."
@@ -38,16 +38,16 @@
     {
       "question": "Sedimentation analysis is based on which law?",
       "answers": {
-        "a": "Darcy’s ",
-        "b": "Stoke’s",
+        "a": "Darcy's ",
+        "b": "Stoke's",
         "c": "Boussinesq's",
-        "d": "Newton’s"
+        "d": "Newton's"
       },
       "explanations": {
-        "a": "Sedimentation analysis is based on Stoke’s law that states force that retards a sphere moving through a viscous fluid is directly proportional to the velocity and the radius of the sphere, and the viscosity of the fluid and not Darcy’s law.  <a href='www.google.com'>here</a>",
-        "b": "Sedimentation analysis is based on Stoke’s law that states force that retards a sphere moving through a viscous fluid is directly proportional to the velocity and the radius of the sphere, and the viscosity of the fluid.",
-        "c": "Sedimentation analysis is based on Stoke’s law that states force that retards a sphere moving through a viscous fluid is directly proportional to the velocity and the radius of the sphere, and the viscosity of the fluid and not Boussinesq’s law",
-        "d": "Sedimentation analysis is based on Stoke’s law that states force that retards a sphere moving through a viscous fluid is directly proportional to the velocity and the radius of the sphere, and the viscosity of the fluid and not Newton’s law."
+        "a": "Sedimentation analysis is based on Stoke's law that states force that retards a sphere moving through a viscous fluid is directly proportional to the velocity and the radius of the sphere, and the viscosity of the fluid and not Darcy's law.",
+        "b": "Sedimentation analysis is based on Stoke's law that states force that retards a sphere moving through a viscous fluid is directly proportional to the velocity and the radius of the sphere, and the viscosity of the fluid.",
+        "c": "Sedimentation analysis is based on Stoke's law that states force that retards a sphere moving through a viscous fluid is directly proportional to the velocity and the radius of the sphere, and the viscosity of the fluid and not Boussinesq's law",
+        "d": "Sedimentation analysis is based on Stoke's law that states force that retards a sphere moving through a viscous fluid is directly proportional to the velocity and the radius of the sphere, and the viscosity of the fluid and not Newton's law."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -67,7 +67,7 @@
         "d": "Hydrometer analysis is conducted for very fine soil particles which cannot be done using sieve analysis, sizes smaller than 75 micron. For particles ranging from 4.75mm to 75 micron, sieve analysis can be carried out."
       },
       "correctAnswer": "b",
-      "difficulty": "Advanced"
+      "difficulty": "advanced"
     },
     {
       "question": "The hydrometer are generally calibrated at",
@@ -78,13 +78,13 @@
         "d": "-27&deg;C"
       },
       "explanations": {
-        "a": "The hydrometers are generally calibrated at 27° C. If the temperature is more than 27°C, temperature correction will be negative. Thus hydrometer are not calibrated at 35° C",
-        "b": "The hydrometers are generally calibrated at 27° C. If the temperature is more than 27°c, temperature correction will be negative. If it is less than 27°c then the temperature correction will be positive.",
-        "c": "The hydrometers are generally calibrated at 27° C. If the temperature is less than 27°C, temperature correction will be positive. Thus hydrometer are not calibrated at -35° C",
-        "d": "The hydrometers are generally calibrated at 27° C. If the temperature is less than 27°C, temperature correction will be positive. Thus hydrometer are not calibrated at -27° C"
+        "a": "The hydrometers are generally calibrated at 27&deg;C. If the temperature is more than 27&deg;C, temperature correction will be negative. Thus hydrometer are not calibrated at 35&deg;C",
+        "b": "The hydrometers are generally calibrated at 27&deg;C. If the temperature is more than 27&deg;c, temperature correction will be negative. If it is less than 27&deg;C then the temperature correction will be positive.",
+        "c": "The hydrometers are generally calibrated at 27&deg;C. If the temperature is less than 27&deg;C, temperature correction will be positive. Thus hydrometer are not calibrated at -35&deg;C",
+        "d": "The hydrometers are generally calibrated at 27&deg;C. If the temperature is less than 27&deg;C, temperature correction will be positive. Thus hydrometer are not calibrated at -27&deg;C"
       },
       "correctAnswer": "b",
-      "difficulty": "Advanced"
+      "difficulty": "advanced"
     }
   ]
 }

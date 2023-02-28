@@ -27,24 +27,24 @@
         "d": "He = H + 10/2(h - Vh/A)"
       },
       "explanations": {
-        "a": "He = H + 1/2(h - Vh/A) is the formula used to calculate the effective depth corresponding to each major calibration mark.  <a href='www.google.com'>here</a>",
+        "a": "He = H + 1/2(h - Vh/A) is the formula used to calculate the effective depth corresponding to each major calibration mark.",
         "b": "He = H + 1/2(h - Vh/A) is the formula used to calculate the effective depth corresponding to each major calibration mark and He = He + 1/2(h - Vh/A) The formula is incorrect.",
         "c": "He = H + 1/2(h - Vh/A) is the formula used to calculate the effective depth corresponding to each major calibration mark, He = H + 1/52(h - Vh/A) , 1/52 is the incorrect parameter in this formula.",
         "d": "He = H + 1/2(h - Vh/A) is the formula used to calculate the effective depth corresponding to each major calibration mark, He = H + 10/2(h - Vh/A), 10/2 is the incorrect parameter in this formula."
       },
       "correctAnswer": "a",
-      "difficulty": "Advanced"
+      "difficulty": "advanced"
     },
     {
       "question": " The meniscus correction in hydrometer reading is ",
       "answers": {
         "a": "Always negative",
         "b": "Always positive",
-        "c": " Negative sometimes",
+        "c": "Negative sometimes",
         "d": "Positive sometimes"
       },
       "explanations": {
-        "a": "Since the hydrometer readings increase downward on the stem, the observed hydrometer readings are always less than the true one. Hence the meniscus correction is always positive. Thus always negative is the incorrect option. <a href='www.google.com'>here</a>",
+        "a": "Since the hydrometer readings increase downward on the stem, the observed hydrometer readings are always less than the true one. Hence the meniscus correction is always positive. Thus always negative is the incorrect option.",
         "b": "Since the hydrometer readings increase downward on the stem, the observed hydrometer readings are always less than the true one. Hence the meniscus correction is always positive.",
         "c": "Since the hydrometer readings increase downward on the stem, the observed hydrometer readings are always less than the true one. Hence the meniscus correction is always positive. Thus negative sometimes is the incorrect option.",
         "d": "Since the hydrometer readings increase downward on the stem, the observed hydrometer readings are always less than the true one. Hence the meniscus correction is always positive. Thus positive sometimes is the incorrect option."
@@ -57,20 +57,20 @@
       "answers": {
         "a": "He vs Rh",
         "b": "H vs He",
-        "c": " h vs Rh",
+        "c": "h vs Rh",
         "d": "None of the above"
       },
       "explanations": {
-        "a": "The calibration curve is plotted between He vs Rh to get the corrected values of hydrometer readings.<a href='www.google.com'>here</a>",
+        "a": "The calibration curve is plotted between He vs Rh to get the corrected values of hydrometer readings.",
         "b": "The calibration curve is plotted between He vs Rh and not between H vs He to get the corrected values of hydrometer readings.",
         "c": "The calibration curve is plotted between He vs Rh and not between h vs Rh to get the corrected values of hydrometer readings.",
         "d": "The calibration curve is plotted between He vs Rh to get the corrected values of hydrometer readings."
       },
       "correctAnswer": "a",
-      "difficulty": "Intermediate"
+      "difficulty": "intermediate"
     },
     {
-      "question": "Determine the effective height (He) of the hydrometer if H = 5cm, h = 15cm, Vh = 80cm3, A = 30cm2. ",
+      "question": "Determine the effective height (He) of the hydrometer if H = 5cm, h = 15cm, Vh = 80cm<sup>3</sup>, A = 30cm<sup>2</sup>. ",
       "answers": {
         "a": "1.11 cm",
         "b": "18.3 cm",
@@ -78,7 +78,7 @@
         "d": "15.2 cm"
       },
       "explanations": {
-        "a": "The formula to be used to calculate He is = H + 1/2(h - Vh/A), when the given values are substituted in the formula, He = 11.16cm, thus 1.11cm is the incorrect option. <a href='www.google.com'>here</a>",
+        "a": "The formula to be used to calculate He is = H + 1/2(h - Vh/A), when the given values are substituted in the formula, He = 11.16cm, thus 1.11cm is the incorrect option.",
         "b": "The formula to be used to calculate He is = H + 1/2(h - Vh/A), when the given values are substituted in the formula, He = 11.16cm, thus 18.3cm is the incorrect option.",
         "c": "The formula to be used to calculate He is = H + 1/2(h - Vh/A), when the given values are substituted in the formula, He = 11.16cm.",
         "d": "The formula to be used to calculate He is = H + 1/2(h - Vh/A), when the given values are substituted in the formula, He = 11.16cm, thus 15.2cm is the incorrect option."
