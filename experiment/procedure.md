@@ -40,64 +40,60 @@
 
     <img src="images/11.jpg"/>
 
-11.  Add 2-3 drops of dispersing agent by clicking on the bottle containing the dispersing agent. Add 70ml of water and mix it thoroughly.
-
-    <img src="images/12.jpg"/>
-
-12. Click on the trowel and mix the soil thoroughly.  
+11. Click on the trowel and mix the soil thoroughly.  
 
     <img src="images/13.png"/>
 
-13. Click on the pan to transfer the mixture into a blender jar.
+12. Click on the pan to transfer the mixture into a blender jar.
 
     <img src="images/14.jpg"/>
 
-14.  Click on the switch to On the machine and blend the mixture for 5 mins.
+13.  Click on the switch to On the machine and blend the mixture for 5 mins.
 
     <img src="images/15.jpg"/>
 
-15. Click on the glass containing soil mixture to transfer the mixture into a measuring cylinder.
+14. Click on the glass containing soil mixture to transfer the mixture into a measuring cylinder.
 
     <img src="images/16.jpg"/>
 
-16.  Click on the glass containing distilled water  to make volume equal to 1000 ml.
+15.  Click on the glass containing distilled water  to make volume equal to 1000 ml.
 
     <img src="images/17.jpg"/>
 
-17.  Click on the container and shake the container.
+16.  Click on the container and shake the container.
 
     <img src="images/18.png"/>
 
-18. Click on the hydrometer to immerse it into a measuring jar and allow it to float freely.
+17. Click on the hydrometer to immerse it into a measuring jar and allow it to float freely.
 
     <img src="images/19.jpg"/>
 
-19. When the hydrometer is immersed into the measuring jar immediately the stop will get started and hydrometer reading for elapsed time will be displayed.
+18. When the hydrometer is immersed into the measuring jar immediately the stop will get started and hydrometer reading for elapsed time will be displayed.
 
     <img src="images/20.jpg"/>
 
-20. Click on the hydrometer and immerse it into distilled water.
+19. Click on the hydrometer and immerse it into distilled water.
 
     <img src="images/21.1.JPG"/>  
 
-21. Note down the readings after 24 hours.
+20. Note down the readings after 24 hours.
 
     <img src="images/22.png"/>
 
-22. Calculate the corrected hydrometer reading and enter the values . Click on the "Check" and "Result" to verify the correct answer.
+21. Calculate the corrected hydrometer reading and enter the values . Click on the "Check" and "Result" to verify the correct answer.
 
     <img src="images/24.jpg"/>
 
-23. From the graph of Effective height Vs Hydrometer corresponding values of He for corrected hydrometer readings are determined.
+22. From the graph of Effective height Vs Hydrometer corresponding values of He for corrected hydrometer readings are determined.
 
     <img src="images/23.JPG"/>
 
-24. Enter the calculated values. Click on "Check" and "Result" to verify the correct answer.
+23. Enter the calculated values. Click on "Check" and "Result" to verify the correct answer.
 
     <img src="images/25.jpg"/></br>
 
     <img src="images/26.jpg"/>
 
-25. Graph of % finer Vs particle size are displayed.
+24. Graph of % finer Vs particle size are displayed.
 
     <img src="images/27.JPG"/>
