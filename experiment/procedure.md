@@ -66,7 +66,7 @@
 22. From the graph of Effective height Vs Hydrometer corresponding values of He for corrected hydrometer readings are determined.
 <img src="images/23.png"/>
 
-23. Enter the calculated values. Click on "Check" and "Result" to verify the correct answer.
+23. Enter the calculated values. Click on "Check" and "Result" to verify the correct answer.</br>
 <img src="images/25.png"/></br>
 <img src="images/26.png"/>
 
