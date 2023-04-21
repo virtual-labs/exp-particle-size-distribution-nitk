@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Hydrometer analysis is conducted to obtain",
+      "question": "Hydrometer analysis is conducted to obtain ________________.",
       "answers": {
         "a": "Particle shape",
         "b": "Particle size",
@@ -19,7 +19,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "The point at which the surface of the liquid touches the stem of the hydrometer correlates to",
+      "question": "The point at which the surface of the liquid touches the stem of the hydrometer correlates to ________________.",
       "answers": {
         "a": "Relative density",
         "b": "Relative mass",
@@ -53,7 +53,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Hydrometer analysis is conducted for soil with particle size less than ",
+      "question": "Hydrometer analysis is conducted for soil with particle size less than ________________ .",
       "answers": {
         "a": "75mm",
         "b": "75 &#181;",
@@ -70,7 +70,7 @@
       "difficulty": "advanced"
     },
     {
-      "question": "The hydrometer are generally calibrated at",
+      "question": "The hydrometer are generally calibrated at ________________.",
       "answers": {
         "a": "35&deg;C",
         "b": "27&deg;C",
