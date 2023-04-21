@@ -15,7 +15,12 @@ v	= Velocity of the object.
 ### Hydrometer :
 
 Hydrometer is an instrument used to determine the density or relative density of different fluids based on the concept of buoyancy.  
-A hydrometer usually consists of a sealed hollow glass tube with a wider bottom portion for buoyancy, a ballast (inside liquid) such as lead or mercury for stability, and a narrow stem with graduations. The liquid to test is poured into a graduated cylinder, and the hydrometer is  lowered into the liquid until the hydrometer floats freely. The point at which the surface of the liquid touches the stem of the hydrometer correlates to relative density.   
+A hydrometer usually consists of a sealed hollow glass tube with a wider bottom portion for buoyancy, a ballast (inside liquid) such as lead or mercury for stability, and a narrow stem with graduations. The liquid to test is poured into a graduated cylinder, and the hydrometer is  lowered into the liquid until the hydrometer floats freely. The point at which the surface of the liquid touches the stem of the hydrometer correlates to relative density.
+<center>
+   <img src="images/hydrometer.jpg" width="300px" height="300px"/></br></br>
+   <p>Typical hydrometer</p>
+<p style="font-size:11px;">(Source : <a href="https://profilab24.com/bilder/produkte/gross/de-labor-analytische-geraete-ludwig-schneider-araeometer-fuer-salzsaeure.jpg">https://profilab24.com/bilder/produkte/gross/de-labor-analytische-geraete-ludwig-schneider-araeometer-fuer-salzsaeure.jpg</a>)</p>
+</center>  
 
 ### Hydrometer Analysis :
 
@@ -42,10 +47,10 @@ A graph of particle size vs percentage finer has to be drawn on a semi log graph
 </center>
 
 Where,   
-G	 = Grain specific gravity.  
-&eta;= viscosity of water.  
-&gamma;w= unit weight of water.   
-t	 = Time in minutes.  
+G	 = Grain specific gravity,  
+&eta;= viscosity of water,
+&gamma;&omega;= unit weight of water,  
+t	 = Time in minutes,  
 He	 = Depth in cm.  
 </br>
 

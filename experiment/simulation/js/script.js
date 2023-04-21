@@ -542,11 +542,12 @@ function magic() {
             "moveHydro2 3s forwards";
               document.getElementById("grad3a").style.animation =
             "moveWater1 1s forwards";
+            setTimeout(function(){
             document.getElementById("iv1").style.visibility="visible";
             document.getElementById("form1").style.visibility="visible";
             document.getElementById("d2").style.visibility="visible";
             document.getElementById("a11").style.visibility="visible";
-              
+          },3000); 
                     
         
             },3000);
@@ -1524,11 +1525,14 @@ function hideButton()
 			document.getElementById("rightAns").innerHTML = "&#10004;"
 			document.getElementById("rightAns").style.color = "green";
 			document.getElementById("chk").style.visibility = "hidden";
-      document.getElementById("nextButton").style.visibility="visible";
+      
 			document.getElementById("Result").style.visibility="hidden";
       document.getElementById("d10").style.visibility="visible";
       document.getElementById("subData1").style.visibility="visible";
-
+      // setTimeout(function(){
+      //   document.getElementById("nextButton").style.visibility="visible";
+      // },1000);
+      // document.getElementById("nextButton").style.visibility="visible";
 			// document.getElementById("form1").style.visibility="visible";
 					// document.getElementById("iv1").style.visibility="visible";
 			return true;
@@ -1603,7 +1607,7 @@ function hideButton2()
 			document.getElementById("rightAns2").innerHTML = "&#10008;"
 			document.getElementById("rightAns2").style.color = "red";
 			document.getElementById("Result2").style.visibility="hidden";
-      document.getElementById("nextButton").style.visibility="visible";
+      // document.getElementById("nextButton").style.visibility="visible";
 			// document.getElementById("form1").style.visibility="visible";
 			// 		document.getElementById("iv1").style.visibility="visible";
 			// document.getElementById("resultStyle").style.visibility = "visible";
@@ -1680,7 +1684,10 @@ function evaluateArea(){
 	document.getElementById('Result').style.visibility="hidden";
   document.getElementById("d10").style.visibility="visible";
   document.getElementById("subData1").style.visibility="visible";
-  document.getElementById("nextButton").style.visibility="visible";
+  setTimeout(function(){
+    document.getElementById("nextButton").style.visibility="visible";
+  },2000);
+  
 	// document.getElementById("form1").style.visibility="visible";
 	// document.getElementById("iv1").style.visibility="visible";
 }
