@@ -113,7 +113,8 @@ html {
     }
     100% {
       left: 224px;
-      top:350px;
+     /* top:350px;*/
+	 top:355px;
     }
   }
   @keyframes moveWatera {
@@ -381,7 +382,7 @@ html {
     }
     100% {
       left: 243px;
-      top:395px;
+      top:399px;
     }
   }
   @keyframes moveTrowel {
