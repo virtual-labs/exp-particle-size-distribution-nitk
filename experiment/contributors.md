@@ -10,6 +10,6 @@
 | :--: | :-- | :-------: |
 |  1   | Prajna K | NITK |
 |  2   | Anusha B Salian | NITK |
-|  1   | Ashika Pai| NITK |
-|  2   | Mahima N  | NITK |
-|  3   | Nishali M Poojari | NITK |
+|  3   | Ashika Pai| NITK |
+|  4   | Mahima N  | NITK |
+|  5   | Nishali M Poojari | NITK |
