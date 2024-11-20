@@ -1,4 +1,4 @@
-### Lab Developer :
+### Developer :
 
 | SNo. | Name | Institute |
 | :--: | :-- | :-------: |
