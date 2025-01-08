@@ -1,0 +1,1205 @@
+html {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+  #title {
+    background-color: black;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 40px;
+    font-size: 19px;
+    text-align: center;
+    font-family: verdana;
+    color: White;
+    text-transform: uppercase;
+  }
+  
+  #title h4 {
+    padding-top: 6px;
+    margin: 0px;
+  }
+  
+  .simsubscreen {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    height: 530px;
+    width: 745px;
+  }
+  
+  #simscreen {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 600px;
+    width: 800px;
+    border: solid 1px;
+    background-color: white;
+  }
+  .incanvas {
+    margin: 5px 0 0 5px;
+    padding: 0;
+    margin-left: -13px;
+  }
+  
+  h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  
+  #nextButton {
+    position: absolute;
+    left: 750px;
+    top: 530px;
+    cursor: pointer;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+    font-family: verdana;
+    font-size: 14px;
+  }
+  .tooltip .tooltiptext {
+    font-family: verdana;
+    font-size: 14px;
+    visibility: hidden;
+    width: 332px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 10px 10px 10px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 100;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .circlebg {
+    border-radius: 100%;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    background: #000;
+  }
+  .steptext {
+    display: inline;
+    font-size: 14px;
+  }
+  
+  
+  #copyright {
+    position: absolute;
+    left: 60px;
+    top: 580px;
+    font-size: 12px;
+  }
+
+  @keyframes moveWater {
+    0% {
+      left: 226px;
+      top: 418px;
+    }
+    100% {
+      left: 224px;
+     /* top:350px;*/
+	 top:355px;
+    }
+  }
+  @keyframes moveWatera {
+    0% {
+      left: 226px;
+      top: 350px;
+    }
+    100% {
+      width: 194px;
+      left: 218px;
+      top:308px;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: hidden;
+      opacity: 1;
+    }
+    }
+  #grad1 {
+    height: 81px;
+    background-image: linear-gradient(
+      to right,
+  
+      white,
+      white
+    );
+  }
+  #grad2 {
+    height: 38px;
+    background-image: linear-gradient(
+      to right,
+  
+      rgb(0, 238, 255),
+      rgb(96, 211, 247)
+    );
+  }
+  #grad21 {
+    height: 38px;
+    background-image: linear-gradient(
+      to right,
+      rgba(158, 86, 4, 0.993),
+      
+      rgba(158, 86, 4, 0.993)
+    );
+  }
+  #grad211 {
+    height: 38px;
+    background-image: linear-gradient(
+      to right,
+      rgba(158, 86, 4, 0.993),
+      
+      rgba(158, 86, 4, 0.993)
+    );
+  }
+  #grad3 {
+    height: 38px;
+    background-image: linear-gradient(
+      to right,
+  
+      rgb(0, 238, 255),
+      rgb(96, 211, 247)
+     
+    );
+  }
+  #grad4 {
+    height: 38px;
+    background-image: linear-gradient(
+      to right,
+  
+      rgb(0, 238, 255),
+      rgb(96, 211, 247)
+     
+    );
+  }
+  #grad41 {
+    height: 38px;
+    background-image: linear-gradient(
+      to right,
+  
+      rgba(158, 86, 4, 0.993),
+      
+      rgba(158, 86, 4, 0.993)
+      
+     
+    );
+  }
+  #grad3a {
+    height: 38px;
+    background-image: linear-gradient(
+      to right,
+  
+      rgb(0, 238, 255),
+      rgb(96, 211, 247)
+     
+    );
+  }
+  #grad2a {
+    height: 38px;
+    background-image: linear-gradient(
+      to right,
+  
+      rgb(0, 238, 255),
+      rgb(96, 211, 247)
+    );
+  }
+  #grad6 {
+    height: 38px;
+    background-image: linear-gradient(
+      to right,
+  
+      white,
+      white
+      
+    );
+  }
+  #grad7 {
+    height: 38px;
+    background-image: linear-gradient(
+      to right,
+  
+      rgb(0, 238, 255),
+      rgb(96, 211, 247)
+    );
+  }
+  #grad2c {
+    height: 10px;
+    background-image: linear-gradient(
+      to right,
+  
+      rgb(0, 238, 255),
+      rgb(96, 211, 247)
+    );
+  }
+  #grad2d {
+    height: 10px;
+    background-image: linear-gradient(
+      to right,
+  
+      rgb(0, 238, 255),
+      rgb(96, 211, 247)
+    );
+  }
+  @keyframes movehy {
+    0% {
+      left: 538px;
+      top: 148px;
+    }
+    50% {
+      left: 300px;
+      top:90px;
+    }
+    100% {
+      left: 295px;
+      top:107px;
+      rotate: -14deg;
+    }
+    100% {
+      left: 310px;
+      top:95px;
+      rotate: -14deg;
+    }
+  }
+  @keyframes movehyb {
+    0% {
+      left: 538px;
+      top: 148px;
+    }
+    50% {
+      left: 300px;
+      top:90px;
+    }
+    100% {
+      left: 295px;
+      top:107px;
+      rotate: -14deg;
+    }
+    100% {
+      left: 310px;
+      top:95px;
+      rotate: -14deg;
+    }
+  }
+  @keyframes movehy1 {
+    0% {
+      left: 310px;
+      top:144px;
+    }
+    
+    
+    100% {
+      left: 310px;
+      top:144px;
+      height: 249px;
+    }
+  }
+  @keyframes movehyb1 {
+    0% {
+      left: 310px;
+      top:144px;
+    }
+    
+    
+    100% {
+      left: 310px;
+      top:144px;
+      height: 249px;
+    }
+  }
+  @keyframes moveHand {
+    0% {
+      left: 500px;
+          top: 260px;
+          
+    }
+    30% {
+      left: 500px;
+      top: 80px;
+     
+    }
+    60% {
+      left: 297px;
+      top: 80px;
+     
+    }
+    
+    100% {
+      left: 297px;
+      top: 205px;
+      
+    }
+    
+  }
+  @keyframes moveHydro2 {
+    0% {
+      left: 296px;
+          top: 213px;
+          
+    }
+    30% {
+      left: 296px;
+      top: 307px;
+      
+    }
+    60% {
+      left: 296px;
+      top: 290px;
+      
+    }
+    
+    100% {
+      left: 296px;
+      top: 307px;
+      
+    }
+    
+  }
+  @keyframes moveWater1 {
+    0% {
+      left: 243px; 
+      top:418px;
+    }
+    100% {
+      left: 243px;
+      top:399px;
+    }
+  }
+  @keyframes moveTrowel {
+    0% {
+      left: 69px;
+          top: 232px;
+    }
+    20%{
+      left: 202px;
+          top: 330px;
+
+    }
+    40%{
+      left: 360px;
+          top: 330px;
+
+    }
+    60%{
+      left: 202px;
+          top: 330px;
+
+    }
+    80%{
+      left: 360px;
+          top: 330px;
+
+    }
+    100% {
+      left: 69px;
+          top: 232px;
+    }
+  }
+  @keyframes disPlate {
+    0% {
+      opacity: 1;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes disPlate1 {
+    0% {
+      opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+ 
+  @keyframes moveScale {
+    0% {
+      left: 398px;
+          top: 332px;
+    }
+    50% {
+      left: 398px;
+      top:131px;
+    }
+    100% {
+      left: 280px;
+      top:131px;
+    }
+  }
+  @keyframes moveScale1 {
+    0% {
+      left: 576px;
+      top: 318px;
+    }
+    50% {
+      left: 576px;
+      top:116px;
+    }
+    100% {
+      left: 458px;
+      top:118px;
+    }
+  }
+  @keyframes moveScale2 {
+    0% {
+      left: 45px;
+      top: 73px;
+    }
+    
+    100% {
+      left: 279px;
+      top: 73px;
+    }
+  }
+  @keyframes moveScale22 {
+    0% {
+      left: 45px;
+      top: 73px;
+    }
+    
+    100% {
+      left: 361px;
+      top: 121px;
+    }
+  }
+  @keyframes moveHydro {
+    0% {
+      left: -14px;
+          top: 162px;
+    }
+    100% {
+      left: 168px;
+          top: 162px;
+    }
+  }
+  @keyframes moveHydro1 {
+    0% {
+      left: 109px;
+          top: 162px;
+    }
+    100% {
+      left: 299px;
+          top: 162px;
+    }
+  }
+  @keyframes sandDrop {
+    0% {
+      left: 253px;
+      top: 120px;
+    }
+    
+    100% {
+      left: 253px;
+      top: 226px;
+    }
+  }
+  @keyframes moveSeive {
+    0% {
+      left: 234px;
+          top: 178px;
+    }
+    20% {
+      left: 250px;
+          top: 178px;
+    }
+    40% {
+      left: 234px;
+          top: 178px;
+    }
+    60% {
+      left: 250px;
+          top: 178px;
+    }
+    80% {
+      left: 234px;
+          top: 178px;
+    }
+
+    
+    100% {
+      left: 250px;
+          top: 178px;
+    }
+  }
+  @keyframes tracing {
+    0% {
+      left: 398px;
+          top: 155px;
+    }
+    10% {
+      left: 321px;
+          top: 265px;
+    }
+    20%{
+      left: 305px;
+      top: 307px;
+    }
+    30%{
+      left: 260px;
+      top: 362px;
+    }
+    40%{
+      left: 247px;
+      top: 371px;
+    }
+    50%{
+      left: 236px;
+      top: 362px;
+    }
+    60%{
+      left: 242px;
+      top: 341px;
+    }
+    70%{
+      left: 281px;
+      top: 286px;
+    }
+    80%{
+      left: 315px;
+      top: 262px;
+    }
+    100%{
+      left: 394px;
+      top: 150px;
+    }
+    
+  }
+
+  @keyframes movePlate {
+    0% {
+      left: 183px;
+      top: 404px;
+    }
+    
+    100% {
+      left: 19px;
+      top: 354px;
+      
+      width: 178px;
+    }
+  }
+  @keyframes movePlate1 {
+    0% {
+      width: 178px;
+      left: 19px;
+      top: 354px;
+    }
+    
+    100% {
+      width: 178px;
+      left: 434px;
+    top: 234px;
+      
+    }
+  }
+  @keyframes moveDrops {
+    0% {
+      left: 508px;
+      top: 376px;
+      rotate: 0deg;
+    }
+    50% {
+      rotate: 0deg;
+      left: 340px;
+      top: 77px;
+     
+      
+    }
+    
+    100% {
+      left: 340px;
+      top: 77px;
+      rotate: -102deg;
+      
+    }
+  }
+  @keyframes moveDrops1 {
+    0% {
+      left: 310px;
+          top: 123px;
+    }
+    
+    100% {
+      left: 310px;
+      top: 259px;
+      
+    }
+  }
+  @keyframes leftMove {
+    0% {
+      left: 279px;
+      top: 154px;
+    }
+    
+    100% {
+      left: 89px;
+      top: 154px;
+      
+    }
+  }
+  @keyframes leftMove1 {
+    0% {
+      left: 225px;
+      top:345px;
+    }
+    
+    100% {
+      left: 35px;
+      top:345px;
+      
+    }
+  }
+  @keyframes rotateCylinder {
+    0% {
+      left: 89px;
+      top:154px;
+    }
+    
+    100% {
+      rotate: 98deg;
+      left: 89px;
+      top:154px;
+      
+    }
+  }
+  @keyframes rotateCylinder1 {
+    0% {
+      left: 35px;
+      top:345px;
+    }
+    
+   
+    100% {
+      rotate: 187deg;
+      left: 11px;
+      top:279px;
+      
+    }
+  }
+  @keyframes waterFall {
+    0% {
+      left: 179px;
+      top:319px;
+    }
+    
+    100% {
+      left: 189px;
+      top:319px;
+      
+    }
+  }
+  @keyframes waterFall2 {
+    0% {
+      left: 237px;
+      top: 364px;
+    }
+    
+    100% {
+      left: 237px;
+      top: 364px;
+      
+    }
+  }
+  @keyframes liftPlate {
+    0% {
+      left: 121px;
+          top: 405px;
+          rotate: 0deg;
+    }
+    
+    99% {
+      left: 246px;
+          top: 174px;
+          
+      
+    }
+    100%{
+      left: 246px;
+          top: 174px;
+          
+      rotate: 23deg;
+    }
+  }
+  @keyframes moveRod {
+    0% {
+      left: 481px;
+      top: 208px;
+    }
+    10% {
+      left: 471px;
+      top: 208px;
+      
+    }
+    20% {
+      left: 481px;
+      top: 208px;
+    }
+    30% {
+      left: 471px;
+      top: 208px;
+      
+    }
+    40% {
+      left: 481px;
+      top: 208px;
+    }
+    50% {
+      left: 471px;
+      top: 208px;
+      
+    }
+    60% {
+      left: 481px;
+      top: 208px;
+    }
+    70% {
+      left: 471px;
+      top: 208px;
+      
+    }
+    80% {
+      left: 481px;
+      top: 208px;
+    }
+    90% {
+      left: 471px;
+      top: 208px;
+      
+    }
+
+    
+    100% {
+      left: 481px;
+      top: 208px;
+      
+    }
+  }
+  @keyframes mix {
+    0% {
+      left: 209px;
+          top: 154px;
+    }
+    30% {
+      left: 209px;
+          top: 154px;
+          rotate: 63deg;
+      
+    }
+    60% {
+      left: 209px;
+          top: 154px;
+          rotate: -50deg;
+    }
+    
+    100% {
+      left: 209px;
+          top: 154px;
+          rotate: 100deg;
+      
+    }
+  }
+  @keyframes mix1 {
+    0% {
+      left: 217px;
+      top:310px;
+    }
+    30% {
+      left: 180px;
+    top: 289px;
+    width: 231px;
+    rotate: 127deg;
+      
+    }
+    60% {
+      left: 232px;
+      top: 297px;
+      width: 223px;
+      rotate: 15deg;
+    }
+    
+    100% {
+      left: 193px;
+    top: 266px;
+    width: 243px;
+    rotate: 166deg;
+      
+    }
+  }
+  @keyframes moveHydrometer {
+    0% {
+      left: 380px;
+          top: 249px;
+    }
+    30% {
+      left: 380px;
+      top: 90px;
+    }
+    60% {
+      left: 463px;
+      top: 90px;
+    }
+    100% {
+      left: 463px;
+    top: 178px;
+    }
+  }
+  @keyframes moveHydrometerr {
+    0% {
+      left: 535px;
+    top: 336px;
+    }
+    30% {
+      left: 463px;
+      top: 90px;
+    }
+    60% {
+      left: 374px;
+      top: 90px;
+    }
+    100% {
+      left: 374px;
+    top: 178px;
+    }
+  }
+  @keyframes movePin {
+    0% {
+      left: 609px;
+          top: 121px;
+    }
+    
+    100% {
+      left: 609px;
+      top: 121px;
+      rotate: 46deg;
+      
+    }
+  }
+  @keyframes movePin1 {
+    0% {
+      left: 601px;
+      top: 121px;
+      rotate: 46deg;
+    }
+    
+    100% {
+      left: 604px;
+    top: 117px;
+    rotate: 95deg;
+      
+    }
+  }
+  @keyframes movePin2 {
+    0% {
+      left: 608px;
+      top: 103px;
+      rotate: 92deg;
+    }
+    
+    100% {
+      left: 608px;
+    top: 103px;
+    rotate: 191deg;
+      
+    }
+  }
+  @keyframes movePin3 {
+    0% {
+      left: 608px;
+    top: 103px;
+    rotate: 191deg;
+      
+    }
+    
+    100% {
+      left: 613px;
+    top: 119px;
+    rotate: 384deg;
+      
+    }
+  }
+  @keyframes movePin4 {
+    0% {
+      left: 613px;
+    top: 119px;
+    rotate: 384deg;
+      
+    }
+    
+    100% {
+      left: 613px;
+    top: 119px;
+    rotate: 771deg;
+      
+    }
+  }
+  /* @keyframes movePin11 {
+    0% {
+      left: 468px;
+      top: 139px;
+    }
+    
+    100% {
+      left: 468px;
+      top: 139px;
+      rotate: 46deg;
+      
+    }
+  } */
+  @keyframes moveHydrometer1 {
+    0% {
+      left: 470px;
+    top: 178px;
+    }
+    25% {
+      left: 470px;
+    top: 200px;
+      
+    }
+    
+    50% {
+      left: 470px;
+    top: 178px;
+      
+    }
+    75% {
+      left: 470px;
+    top: 200px;
+      
+    }
+    100% {
+      left: 470px;
+    top: 178px;
+      
+    }
+  }
+  @keyframes moveHydrometer111 {
+    0% {
+      left: 381px;
+    top: 200px;
+    }
+    25% {
+      left: 381px;
+    top: 256px;
+      
+    }
+    
+    50% {
+      left: 381px;
+    top: 200px;
+      
+    }
+    75% {
+      left: 381px;
+    top: 256px;
+      
+    }
+    85% {
+      left: 381px;
+    top: 200px;
+      
+    }
+    100% {
+      left: 381px;
+    top: 256px;
+      
+    }
+  }
+  @keyframes moveHydrometer11 {
+    0% {
+      left: 375px;
+    top: 200px;
+    }
+    25% {
+      left: 375px;
+    top: 256px;
+      
+    }
+    
+    50% {
+      left: 375px;
+    top: 200px;
+      
+    }
+    75% {
+      left: 375px;
+    top: 256px;
+      
+    }
+    85% {
+      left: 375px;
+    top: 200px;
+      
+    }
+    100% {
+      left: 375px;
+    top: 256px;
+      
+    }
+  }
+  @keyframes moveHydrometer11a {
+    0% {
+      left: 373px;
+    top: 272px;
+    } 
+    10% {
+      left: 373px;
+      top: 90px;
+    }
+    20% {
+      left: 463px;
+      top: 90px;
+    }
+    30% {
+      left: 470px;
+    top: 241px;
+    }
+    40% {
+      left: 470px;
+    top: 200px;
+      
+    }
+    
+    50% {
+      left: 470px;
+    top: 241px;
+      
+    }
+    60% {
+      left: 470px;
+    top: 200px;
+      
+    }
+    80% {
+      left: 470px;
+    top: 241px;
+      
+    }
+  
+  100% {
+    left: 470px;
+  top: 241px;
+    
+  }
+  /* 60% {
+    left: 463px;
+  top: 178px;
+  }
+  70% {
+    left: 463px;
+    top: 90px;
+  }
+  80% {
+    left: 373px;
+    top: 90px;
+  }
+  100% {
+    left: 373px;
+  top: 272px;
+  } */
+  }
+  @keyframes moveHydrometer2 {
+    0% {
+      left: 463px;
+    top: 178px;
+    }
+    30% {
+      left: 463px;
+      top: 90px;
+    }
+    60% {
+      left: 373px;
+      top: 90px;
+    }
+    100% {
+      left: 373px;
+    top: 272px;
+    }
+  }
+  
+  #tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+    font-family: verdana;
+    font-size:18px;
+  }
+  #tooltip .tooltiptext {
+	font-family: verdana;
+	font-size:14px;
+    /* visibility: hidden; */
+    width: 362px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    z-index: 100;
+	height: 136px;
+	
+    
+}
+#tooltip:hover .tooltiptext{
+	visibility: visible;
+}
+
+table{
+	border: 1px solid;
+    height: 50px;
+    width: 667px;
+    position: absolute;
+    top: 38px;
+    left: -74px;
+	font-size: 15px;
+	border-spacing: 0px;
+	
+	
+}
+
+tr,th,td{
+	border: 1px solid;
+	height: 24px;
+}
+tr,th,td{
+	border: 1px solid;
+	height: 18px;
+}
+#tab{
+	border: 1px solid;
+    height: 35px;
+    width: 377px;
+    position: absolute;
+    top: 77px;
+    left: -6px;
+	font-size: 14px;
+	border-spacing: 0px;
+	
+	/* border-collapse: collapse; */
+}
+.con{
+	top:20px;
+	margin-top: 0px;
+}
